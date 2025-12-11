@@ -22,6 +22,6 @@ export const useNavigationStore = defineStore('navigation', () => {
     mobileMenuOpen,
     setActiveSection,
     toggleMobileMenu,
-    closeMobileMenu
+    closeMobileMenu,
   }
 })

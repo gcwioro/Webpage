@@ -9,21 +9,30 @@ const { t } = useI18n()
 const contactInfo = {
   email: 'guenther@cwioro.online',
   phone: '+43 676 67 11 259',
-  location: 'Villach, Austria'
+  location: 'Villach, Austria',
 }
 </script>
 
 <template>
-  <section id="contact" class="py-20 bg-background">
+  <section
+    id="contact"
+    class="py-20 bg-background"
+  >
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <SectionHeading title-key="contact.title" subtitle-key="contact.subtitle" />
+      <SectionHeading
+        title-key="contact.title"
+        subtitle-key="contact.subtitle"
+      />
 
       <div class="max-w-2xl mx-auto">
         <p class="text-center text-text-secondary mb-10">
           {{ t('contact.description') }}
         </p>
 
-        <BaseCard :hover="false" class="text-center">
+        <BaseCard
+          :hover="false"
+          class="text-center"
+        >
           <div class="space-y-6">
             <div class="flex flex-col items-center gap-2">
               <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">

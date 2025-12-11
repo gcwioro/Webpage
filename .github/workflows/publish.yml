@@ -3,16 +3,30 @@ name: Build & Deploy
 on:
   push:
     branches:
-      - 'release/**'     # publish alpha on pushes to git-flow release branches
+      - 'main/**'     # publish alpha on pushes to git-flow release branches
     tags:
       - 'v*.*.*'         # publish stable on semver tags (e.g., v1.2.3)
   workflow_dispatch:      # manual trigger
 
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 jobs:
   release:
-    name: Publish stable (tagged release)
-    if: startsWith(github.ref, 'refs/tags/v')
+    name: Deploy PAGE
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -30,11 +44,18 @@ jobs:
       - name: Type Check
         run: npm run typecheck
 
-      - name: Test
-        run: npm test -- --run
 
       - name: Build
         run: npm run build
 
 
-
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: 'dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -12,16 +12,13 @@ const personSchema = {
     streetAddress: 'Meister Friedrich Straße 22/1',
     addressLocality: 'Villach',
     postalCode: '9500',
-    addressCountry: 'Austria'
+    addressCountry: 'Austria',
   },
   url: 'https://cwioro.online',
-  sameAs: [
-    'https://linkedin.com/in/guenther-cwioro',
-    'https://github.com/gcwioro'
-  ],
+  sameAs: ['https://linkedin.com/in/guenther-cwioro', 'https://github.com/gcwioro'],
   alumniOf: {
     '@type': 'CollegeOrUniversity',
-    name: 'Alpen-Adria University of Klagenfurt'
+    name: 'Alpen-Adria University of Klagenfurt',
   },
   knowsAbout: [
     'Vue.js',
@@ -30,8 +27,8 @@ const personSchema = {
     'System Architecture',
     'Domain-Driven Design',
     'Cloud Computing',
-    'API Design'
-  ]
+    'API Design',
+  ],
 }
 
 const professionalServiceSchema = {
@@ -41,7 +38,7 @@ const professionalServiceSchema = {
   description: 'Freelance Full-Stack Software Development Services',
   provider: {
     '@type': 'Person',
-    name: 'Günther Cwioro'
+    name: 'Günther Cwioro',
   },
   areaServed: ['Austria', 'Europe'],
   serviceType: [
@@ -49,9 +46,9 @@ const professionalServiceSchema = {
     'Backend Development',
     'Frontend Development',
     'System Architecture',
-    'Technical Consulting'
+    'Technical Consulting',
   ],
-  url: 'https://cwioro.online'
+  url: 'https://cwioro.online',
 }
 
 export function useStructuredData() {
@@ -59,12 +56,12 @@ export function useStructuredData() {
     script: [
       {
         type: 'application/ld+json',
-        innerHTML: JSON.stringify(personSchema)
+        innerHTML: JSON.stringify(personSchema),
       },
       {
         type: 'application/ld+json',
-        innerHTML: JSON.stringify(professionalServiceSchema)
-      }
-    ]
+        innerHTML: JSON.stringify(professionalServiceSchema),
+      },
+    ],
   })
 }

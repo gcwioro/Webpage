@@ -8,16 +8,22 @@ import { projects } from '@/data/projects'
 
 const { t } = useI18n()
 
-const featuredTechs = technologies.filter(t => t.proficiency === 'expert').slice(0, 6)
+const featuredTechs = technologies.filter((t) => t.proficiency === 'expert').slice(0, 6)
 const featuredProjects = projects.slice(0, 3)
 </script>
 
 <template>
   <div>
-    <section class="min-h-screen flex items-center justify-center pt-20 pb-16 relative overflow-hidden">
+    <section
+      class="min-h-screen flex items-center justify-center pt-20 pb-16 relative overflow-hidden"
+    >
       <div class="absolute inset-0 bg-gradient-to-br from-background via-white to-blue-50"></div>
-      <div class="absolute top-20 left-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl animate-pulse"></div>
-      <div class="absolute bottom-20 right-10 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div
+        class="absolute top-20 left-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl animate-pulse"
+      ></div>
+      <div
+        class="absolute bottom-20 right-10 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl animate-pulse delay-1000"
+      ></div>
 
       <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         <div class="text-center">
@@ -75,7 +81,10 @@ const featuredProjects = projects.slice(0, 3)
             </RouterLink>
 
             <RouterLink to="/projects">
-              <BaseButton variant="outline" size="lg">
+              <BaseButton
+                variant="outline"
+                size="lg"
+              >
                 <i class="fa-solid fa-folder-open mr-2"></i>
                 {{ t('hero.cta_projects') }}
               </BaseButton>
@@ -103,13 +112,20 @@ const featuredProjects = projects.slice(0, 3)
             class="group bg-background rounded-2xl p-6 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-up"
             :style="{ animationDelay: `${0.1 * index}s` }"
           >
-            <div v-if="project.awards" class="mb-4">
-              <span class="inline-flex items-center gap-1 text-xs font-medium text-yellow-600 bg-yellow-100 px-2 py-1 rounded-full">
+            <div
+              v-if="project.awards"
+              class="mb-4"
+            >
+              <span
+                class="inline-flex items-center gap-1 text-xs font-medium text-yellow-600 bg-yellow-100 px-2 py-1 rounded-full"
+              >
                 <i class="fa-solid fa-trophy"></i>
                 Award Winner
               </span>
             </div>
-            <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+            <h3
+              class="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors"
+            >
               {{ t(project.titleKey) }}
             </h3>
             <p class="text-text-secondary text-sm mb-4 line-clamp-2">

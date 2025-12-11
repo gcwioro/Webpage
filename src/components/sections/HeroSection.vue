@@ -29,12 +29,19 @@ const { scrollTo } = useScrollTo()
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <BaseButton size="lg" @click="scrollTo('contact')">
+          <BaseButton
+            size="lg"
+            @click="scrollTo('contact')"
+          >
             <i class="fa-solid fa-envelope mr-2"></i>
             {{ t('hero.cta_contact') }}
           </BaseButton>
 
-          <BaseButton variant="outline" size="lg" @click="scrollTo('projects')">
+          <BaseButton
+            variant="outline"
+            size="lg"
+            @click="scrollTo('projects')"
+          >
             <i class="fa-solid fa-folder-open mr-2"></i>
             {{ t('hero.cta_projects') }}
           </BaseButton>

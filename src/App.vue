@@ -24,7 +24,10 @@ useStructuredData()
         name="page"
         mode="out-in"
       >
-        <component :is="Component" :key="route.path" />
+        <component
+          :is="Component"
+          :key="route.path"
+        />
       </Transition>
     </RouterView>
 

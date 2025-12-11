@@ -6,10 +6,7 @@ import BaseButton from './BaseButton.vue'
 
 const { t } = useI18n()
 
-const {
-  project,
-  isOpen = false
-} = defineProps<{
+const { project, isOpen = false } = defineProps<{
   project: ProjectDetail | null
   isOpen: boolean
 }>()
@@ -83,7 +80,10 @@ function handleBackdropClick(event: MouseEvent) {
                 {{ t(project.fullDescriptionKey) }}
               </p>
 
-              <div v-if="project.awards && project.awards.length > 0" class="mb-6">
+              <div
+                v-if="project.awards && project.awards.length > 0"
+                class="mb-6"
+              >
                 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center gap-2">
                   <i class="fa-solid fa-trophy text-yellow-500"></i>
                   {{ t('projects.awards') }}
@@ -100,7 +100,10 @@ function handleBackdropClick(event: MouseEvent) {
                 </div>
               </div>
 
-              <div v-if="project.highlights && project.highlights.length > 0" class="mb-6">
+              <div
+                v-if="project.highlights && project.highlights.length > 0"
+                class="mb-6"
+              >
                 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center gap-2">
                   <i class="fa-solid fa-star text-accent"></i>
                   {{ t('projects.highlights') }}
@@ -153,7 +156,12 @@ function handleBackdropClick(event: MouseEvent) {
             </div>
 
             <div class="p-4 border-t border-gray-100 bg-gray-50">
-              <BaseButton variant="secondary" size="sm" class="w-full" @click="close">
+              <BaseButton
+                variant="secondary"
+                size="sm"
+                class="w-full"
+                @click="close"
+              >
                 {{ t('projects.close') }}
               </BaseButton>
             </div>

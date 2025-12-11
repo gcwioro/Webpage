@@ -24,25 +24,25 @@ export const projects: ProjectDetail[] = [
       {
         titleKey: 'projects.adhoc.awards.jugendinnovativ.title',
         descriptionKey: 'projects.adhoc.awards.jugendinnovativ.description',
-        logo: '/images/jugendinnovativ-logo.png'
+        logo: '/images/jugendinnovativ-logo.png',
       },
       {
         titleKey: 'projects.adhoc.awards.isef.title',
         descriptionKey: 'projects.adhoc.awards.isef.description',
-        logo: '/images/intel-isef-logo.png'
-      }
+        logo: '/images/intel-isef-logo.png',
+      },
     ],
     links: [
       { label: 'ROS Wiki', url: 'https://wiki.ros.org/adhoc_communication' },
       { label: 'GitHub', url: 'https://github.com/aau-ros/adhoc_communication' },
-      { label: 'NES Award Article', url: 'https://nes.aau.at/?p=6419' }
+      { label: 'NES Award Article', url: 'https://nes.aau.at/?p=6419' },
     ],
     highlights: [
       'projects.adhoc.highlights.0',
       'projects.adhoc.highlights.1',
       'projects.adhoc.highlights.2',
-      'projects.adhoc.highlights.3'
-    ]
+      'projects.adhoc.highlights.3',
+    ],
   },
   {
     id: 'autoletter',
@@ -56,8 +56,8 @@ export const projects: ProjectDetail[] = [
     highlights: [
       'projects.autoletter.highlights.0',
       'projects.autoletter.highlights.1',
-      'projects.autoletter.highlights.2'
-    ]
+      'projects.autoletter.highlights.2',
+    ],
   },
   {
     id: 'noborder',
@@ -70,8 +70,8 @@ export const projects: ProjectDetail[] = [
     highlights: [
       'projects.noborder.highlights.0',
       'projects.noborder.highlights.1',
-      'projects.noborder.highlights.2'
-    ]
+      'projects.noborder.highlights.2',
+    ],
   },
   {
     id: 'trustbit-ddd',
@@ -84,22 +84,29 @@ export const projects: ProjectDetail[] = [
     highlights: [
       'projects.trustbit.highlights.0',
       'projects.trustbit.highlights.1',
-      'projects.trustbit.highlights.2'
-    ]
+      'projects.trustbit.highlights.2',
+    ],
   },
   {
     id: 'kickscale',
     titleKey: 'projects.kickscale.title',
     descriptionKey: 'projects.kickscale.description',
     fullDescriptionKey: 'projects.kickscale.fullDescription',
-    technologies: ['React', 'TypeScript', 'Firebase', 'Node.js', 'Cloud Functions', 'GitHub Actions'],
+    technologies: [
+      'React',
+      'TypeScript',
+      'Firebase',
+      'Node.js',
+      'Cloud Functions',
+      'GitHub Actions',
+    ],
     year: '2021-2022',
     role: 'Lead Developer',
     highlights: [
       'projects.kickscale.highlights.0',
       'projects.kickscale.highlights.1',
-      'projects.kickscale.highlights.2'
-    ]
+      'projects.kickscale.highlights.2',
+    ],
   },
   {
     id: 'saraas',
@@ -111,13 +118,16 @@ export const projects: ProjectDetail[] = [
     role: 'Co-Founder & Developer',
     links: [
       { label: 'arXiv Paper', url: 'https://arxiv.org/abs/1805.00448' },
-      { label: 'University Project Page', url: 'https://campus.uni-klu.ac.at/cris/project/0f4de0c66b0c7bfb016b0ce750980002' }
+      {
+        label: 'University Project Page',
+        url: 'https://campus.uni-klu.ac.at/cris/project/0f4de0c66b0c7bfb016b0ce750980002',
+      },
     ],
     highlights: [
       'projects.saraas.highlights.0',
       'projects.saraas.highlights.1',
-      'projects.saraas.highlights.2'
-    ]
+      'projects.saraas.highlights.2',
+    ],
   },
   {
     id: 'satalia-vrp',
@@ -130,8 +140,8 @@ export const projects: ProjectDetail[] = [
     highlights: [
       'projects.satalia.highlights.0',
       'projects.satalia.highlights.1',
-      'projects.satalia.highlights.2'
-    ]
+      'projects.satalia.highlights.2',
+    ],
   },
   {
     id: 'bitmoving-video',
@@ -144,8 +154,8 @@ export const projects: ProjectDetail[] = [
     highlights: [
       'projects.bitmoving.highlights.0',
       'projects.bitmoving.highlights.1',
-      'projects.bitmoving.highlights.2'
-    ]
+      'projects.bitmoving.highlights.2',
+    ],
   },
   {
     id: 'hex-optimization',
@@ -158,11 +168,11 @@ export const projects: ProjectDetail[] = [
     highlights: [
       'projects.optimization.highlights.0',
       'projects.optimization.highlights.1',
-      'projects.optimization.highlights.2'
-    ]
-  }
+      'projects.optimization.highlights.2',
+    ],
+  },
 ]
 
 export function getProjectById(id: string): ProjectDetail | undefined {
-  return projects.find(p => p.id === id)
+  return projects.find((p) => p.id === id)
 }

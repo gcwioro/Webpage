@@ -20,7 +20,7 @@ export const i18n = createI18n({
   legacy: false,
   locale: getStoredLocale(),
   fallbackLocale: 'en',
-  messages: { de, en }
+  messages: { de, en },
 })
 
 export function useLocale() {

@@ -18,7 +18,7 @@ const navItems = [
     id: 'home',
     key: 'nav.home',
     to: '/',
-    icon: 'fa-solid fa-home'
+    icon: 'fa-solid fa-home',
   },
   {
     id: 'about',
@@ -27,27 +27,27 @@ const navItems = [
     icon: 'fa-solid fa-user',
     subItems: [
       { key: 'nav.technologies', to: '/about#technologies', icon: 'fa-solid fa-code' },
-      { key: 'nav.experience', to: '/about#experience', icon: 'fa-solid fa-briefcase' }
-    ]
+      { key: 'nav.experience', to: '/about#experience', icon: 'fa-solid fa-briefcase' },
+    ],
   },
   {
     id: 'services',
     key: 'nav.services',
     to: '/services',
-    icon: 'fa-solid fa-cogs'
+    icon: 'fa-solid fa-cogs',
   },
   {
     id: 'projects',
     key: 'nav.projects',
     to: '/projects',
-    icon: 'fa-solid fa-folder-open'
+    icon: 'fa-solid fa-folder-open',
   },
   {
     id: 'contact',
     key: 'nav.contact',
     to: '/contact',
-    icon: 'fa-solid fa-envelope'
-  }
+    icon: 'fa-solid fa-envelope',
+  },
 ]
 
 function toggleSection(id: string) {
@@ -74,14 +74,20 @@ function handleNavigation() {
       class="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg border-t border-gray-100 max-h-[80vh] overflow-y-auto"
     >
       <nav class="flex flex-col p-4 space-y-1">
-        <template v-for="item in navItems" :key="item.id">
+        <template
+          v-for="item in navItems"
+          :key="item.id"
+        >
           <div v-if="item.subItems">
             <button
               @click="toggleSection(item.id)"
               class="w-full flex items-center justify-between px-4 py-3 text-left text-text hover:bg-gray-50 rounded-lg transition-colors"
             >
               <span class="flex items-center gap-3">
-                <i :class="item.icon" class="w-5 text-accent"></i>
+                <i
+                  :class="item.icon"
+                  class="w-5 text-accent"
+                ></i>
                 {{ t(item.key) }}
               </span>
               <i
@@ -107,7 +113,10 @@ function handleNavigation() {
                   class="flex items-center gap-3 px-4 py-2.5 text-sm text-text-secondary hover:text-primary hover:bg-gray-50 transition-colors"
                   @click="handleNavigation"
                 >
-                  <i :class="item.icon" class="w-4 text-accent"></i>
+                  <i
+                    :class="item.icon"
+                    class="w-4 text-accent"
+                  ></i>
                   {{ t('nav.overview') }}
                 </RouterLink>
                 <RouterLink
@@ -117,7 +126,10 @@ function handleNavigation() {
                   class="flex items-center gap-3 px-4 py-2.5 text-sm text-text-secondary hover:text-primary hover:bg-gray-50 transition-colors"
                   @click="handleNavigation"
                 >
-                  <i :class="subItem.icon" class="w-4 text-accent"></i>
+                  <i
+                    :class="subItem.icon"
+                    class="w-4 text-accent"
+                  ></i>
                   {{ t(subItem.key) }}
                 </RouterLink>
               </div>
@@ -130,7 +142,10 @@ function handleNavigation() {
             class="flex items-center gap-3 px-4 py-3 text-left text-text hover:bg-gray-50 rounded-lg transition-colors"
             @click="handleNavigation"
           >
-            <i :class="item.icon" class="w-5 text-accent"></i>
+            <i
+              :class="item.icon"
+              class="w-5 text-accent"
+            ></i>
             {{ t(item.key) }}
           </RouterLink>
         </template>

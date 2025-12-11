@@ -15,34 +15,34 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('@/pages/HomePage.vue')
+      component: () => import('@/pages/HomePage.vue'),
     },
     {
       path: '/about',
       name: 'about',
-      component: () => import('@/pages/AboutPage.vue')
+      component: () => import('@/pages/AboutPage.vue'),
     },
     {
       path: '/services',
       name: 'services',
-      component: () => import('@/pages/ServicesPage.vue')
+      component: () => import('@/pages/ServicesPage.vue'),
     },
     {
       path: '/projects',
       name: 'projects',
-      component: () => import('@/pages/ProjectsPage.vue')
+      component: () => import('@/pages/ProjectsPage.vue'),
     },
     {
       path: '/projects/:id',
       name: 'project-detail',
-      component: () => import('@/pages/ProjectDetailPage.vue')
+      component: () => import('@/pages/ProjectDetailPage.vue'),
     },
     {
       path: '/contact',
       name: 'contact',
-      component: () => import('@/pages/ContactPage.vue')
-    }
-  ]
+      component: () => import('@/pages/ContactPage.vue'),
+    },
+  ],
 })
 
 export default router

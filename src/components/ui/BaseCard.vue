@@ -1,7 +1,5 @@
 <script setup lang="ts">
-const {
-  hover = true
-} = defineProps<{
+const { hover = true } = defineProps<{
   hover?: boolean
 }>()
 </script>

@@ -6,7 +6,10 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <section id="about" class="py-20 bg-white">
+  <section
+    id="about"
+    class="py-20 bg-white"
+  >
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <SectionHeading title-key="about.title" />
 

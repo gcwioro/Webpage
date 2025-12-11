@@ -5,9 +5,15 @@ import { experiences } from '@/data/experience'
 </script>
 
 <template>
-  <section id="experience" class="py-20 bg-background">
+  <section
+    id="experience"
+    class="py-20 bg-background"
+  >
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <SectionHeading title-key="experience.title" subtitle-key="experience.subtitle" />
+      <SectionHeading
+        title-key="experience.title"
+        subtitle-key="experience.subtitle"
+      />
 
       <div class="max-w-3xl mx-auto">
         <TimelineItem

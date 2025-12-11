@@ -26,21 +26,21 @@ const navItems = [
     hasDropdown: true,
     dropdownItems: [
       { key: 'nav.technologies', to: '/about#technologies', icon: 'fa-solid fa-code' },
-      { key: 'nav.experience', to: '/about#experience', icon: 'fa-solid fa-briefcase' }
-    ]
+      { key: 'nav.experience', to: '/about#experience', icon: 'fa-solid fa-briefcase' },
+    ],
   },
   {
     id: 'services',
     key: 'nav.services',
     to: '/services',
-    icon: 'fa-solid fa-cogs'
+    icon: 'fa-solid fa-cogs',
   },
   {
     id: 'projects',
     key: 'nav.projects',
     to: '/projects',
-    icon: 'fa-solid fa-folder-open'
-  }
+    icon: 'fa-solid fa-folder-open',
+  },
 ]
 
 function handleScroll() {
@@ -77,7 +77,10 @@ onUnmounted(() => {
   >
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between h-16 md:h-20">
-        <RouterLink to="/" class="hover:opacity-80 transition-opacity">
+        <RouterLink
+          to="/"
+          class="hover:opacity-80 transition-opacity"
+        >
           <TheLogo />
         </RouterLink>
 
@@ -92,11 +95,16 @@ onUnmounted(() => {
             <RouterLink
               :to="item.to"
               class="flex items-center gap-2 px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg"
-              :class="isActiveRoute(item.to)
-                ? 'text-accent bg-accent/10'
-                : 'text-text-secondary hover:text-primary hover:bg-gray-50'"
+              :class="
+                isActiveRoute(item.to)
+                  ? 'text-accent bg-accent/10'
+                  : 'text-text-secondary hover:text-primary hover:bg-gray-50'
+              "
             >
-              <i :class="item.icon" class="text-xs"></i>
+              <i
+                :class="item.icon"
+                class="text-xs"
+              ></i>
               {{ t(item.key) }}
               <i
                 v-if="item.hasDropdown"
@@ -117,7 +125,9 @@ onUnmounted(() => {
                 v-if="item.hasDropdown && activeDropdown === item.id"
                 class="absolute top-full left-0 pt-2"
               >
-                <div class="bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[200px] overflow-hidden">
+                <div
+                  class="bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[200px] overflow-hidden"
+                >
                   <RouterLink
                     v-for="dropdownItem in item.dropdownItems"
                     :key="dropdownItem.to"
@@ -125,7 +135,10 @@ onUnmounted(() => {
                     class="flex items-center gap-3 px-4 py-2.5 text-sm text-text-secondary hover:text-primary hover:bg-gray-50 transition-colors"
                     @click="closeDropdown"
                   >
-                    <i :class="dropdownItem.icon" class="w-4 text-accent"></i>
+                    <i
+                      :class="dropdownItem.icon"
+                      class="w-4 text-accent"
+                    ></i>
                     {{ t(dropdownItem.key) }}
                   </RouterLink>
                 </div>
@@ -148,7 +161,10 @@ onUnmounted(() => {
           class="md:hidden p-2 text-text-secondary hover:text-primary transition-colors"
           @click="navStore.toggleMobileMenu()"
         >
-          <i :class="mobileMenuOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'" class="text-xl"></i>
+          <i
+            :class="mobileMenuOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'"
+            class="text-xl"
+          ></i>
         </button>
       </div>
     </div>

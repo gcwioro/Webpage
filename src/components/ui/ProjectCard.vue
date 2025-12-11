@@ -6,9 +6,7 @@ import type { ProjectDetail } from '@/data/projects'
 
 const { t } = useI18n()
 
-const {
-  project
-} = defineProps<{
+const { project } = defineProps<{
   project: ProjectDetail
 }>()
 
@@ -24,7 +22,10 @@ const hasAwards = project.awards && project.awards.length > 0
     class="cursor-pointer group relative"
     @click="emit('click')"
   >
-    <div v-if="hasAwards" class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg">
+    <div
+      v-if="hasAwards"
+      class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg"
+    >
       <i class="fa-solid fa-trophy text-white text-sm"></i>
     </div>
 
@@ -32,7 +33,9 @@ const hasAwards = project.awards && project.awards.length > 0
       <h3 class="text-lg font-semibold text-primary group-hover:text-accent transition-colors">
         {{ t(project.titleKey) }}
       </h3>
-      <span class="text-xs text-text-secondary bg-gray-100 px-2 py-1 rounded">{{ project.year }}</span>
+      <span class="text-xs text-text-secondary bg-gray-100 px-2 py-1 rounded">{{
+        project.year
+      }}</span>
     </div>
 
     <p class="text-text-secondary text-sm mb-4 line-clamp-2">{{ t(project.descriptionKey) }}</p>
@@ -54,7 +57,9 @@ const hasAwards = project.awards && project.awards.length > 0
 
     <div class="flex items-center justify-between text-sm">
       <span class="text-text-secondary">{{ project.role }}</span>
-      <span class="text-accent group-hover:translate-x-1 transition-transform flex items-center gap-1">
+      <span
+        class="text-accent group-hover:translate-x-1 transition-transform flex items-center gap-1"
+      >
         {{ t('projects.viewDetails') }}
         <i class="fa-solid fa-arrow-right"></i>
       </span>

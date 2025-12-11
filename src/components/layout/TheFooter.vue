@@ -8,8 +8,12 @@ const { scrollToTop } = useScrollTo()
 const currentYear = new Date().getFullYear()
 
 const socialLinks = [
-  { icon: 'fa-brands fa-linkedin-in', url: 'https://linkedin.com/in/guenther-cwioro', label: 'LinkedIn' },
-  { icon: 'fa-brands fa-github', url: 'https://github.com/gcwioro', label: 'GitHub' }
+  {
+    icon: 'fa-brands fa-linkedin-in',
+    url: 'https://linkedin.com/in/guenther-cwioro',
+    label: 'LinkedIn',
+  },
+  { icon: 'fa-brands fa-github', url: 'https://github.com/gcwioro', label: 'GitHub' },
 ]
 </script>
 
@@ -19,7 +23,8 @@ const socialLinks = [
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="flex flex-col items-center md:items-start gap-3">
           <div class="text-2xl font-bold">
-            <span class="text-white">&lt;G</span><span class="text-gradient">Dev</span><span class="text-white">/&gt;</span>
+            <span class="text-white">&lt;G</span><span class="text-gradient">Dev</span
+            ><span class="text-white">/&gt;</span>
           </div>
           <p class="text-gray-400 text-sm">{{ t('footer.built_with') }}</p>
         </div>

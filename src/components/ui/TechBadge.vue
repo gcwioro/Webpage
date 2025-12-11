@@ -5,13 +5,11 @@ const {
   name,
   proficiency = 'intermediate',
   icon = undefined,
-  iconType = 'fontawesome',
-  size = 'md'
+  size = 'md',
 } = defineProps<{
   name: string
   proficiency?: Technology['proficiency']
   icon?: string
-  iconType?: 'devicon' | 'fontawesome'
   size?: 'sm' | 'md' | 'lg'
 }>()
 </script>
@@ -23,13 +21,13 @@ const {
       {
         'bg-accent/10 text-accent border border-accent/20': proficiency === 'expert',
         'bg-secondary/10 text-secondary border border-secondary/20': proficiency === 'advanced',
-        'bg-gray-100 text-text-secondary border border-gray-200': proficiency === 'intermediate'
+        'bg-gray-100 text-text-secondary border border-gray-200': proficiency === 'intermediate',
       },
       {
         'px-2 py-1 text-xs': size === 'sm',
         'px-3 py-1.5 text-sm': size === 'md',
-        'px-4 py-2 text-base': size === 'lg'
-      }
+        'px-4 py-2 text-base': size === 'lg',
+      },
     ]"
   >
     <i
@@ -39,8 +37,8 @@ const {
         {
           'text-sm': size === 'sm',
           'text-base': size === 'md',
-          'text-lg': size === 'lg'
-        }
+          'text-lg': size === 'lg',
+        },
       ]"
     ></i>
     {{ name }}

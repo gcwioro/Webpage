@@ -3,7 +3,7 @@ import { useI18n } from 'vue-i18n'
 import SectionHeading from '@/components/ui/SectionHeading.vue'
 import TechBadge from '@/components/ui/TechBadge.vue'
 import TimelineItem from '@/components/ui/TimelineItem.vue'
-import { technologies, getTechnologiesByCategory } from '@/data/technologies'
+import { getTechnologiesByCategory } from '@/data/technologies'
 import { experiences } from '@/data/experience'
 
 const { t } = useI18n()
@@ -12,7 +12,7 @@ const categories = [
   { key: 'frontend', labelKey: 'technologies.categories.frontend', icon: 'fa-solid fa-desktop' },
   { key: 'backend', labelKey: 'technologies.categories.backend', icon: 'fa-solid fa-server' },
   { key: 'cloud', labelKey: 'technologies.categories.cloud', icon: 'fa-solid fa-cloud' },
-  { key: 'methods', labelKey: 'technologies.categories.methods', icon: 'fa-solid fa-lightbulb' }
+  { key: 'methods', labelKey: 'technologies.categories.methods', icon: 'fa-solid fa-lightbulb' },
 ] as const
 </script>
 
@@ -44,19 +44,27 @@ const categories = [
           </div>
 
           <div class="grid grid-cols-2 gap-4 animate-fade-in-right">
-            <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+            <div
+              class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
               <div class="text-4xl font-bold text-gradient mb-2">10+</div>
               <div class="text-text-secondary text-sm">Years Experience</div>
             </div>
-            <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+            <div
+              class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
               <div class="text-4xl font-bold text-gradient mb-2">50+</div>
               <div class="text-text-secondary text-sm">Projects Completed</div>
             </div>
-            <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+            <div
+              class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
               <div class="text-4xl font-bold text-gradient mb-2">2</div>
               <div class="text-text-secondary text-sm">Awards Won</div>
             </div>
-            <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+            <div
+              class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
               <div class="text-4xl font-bold text-gradient mb-2">1</div>
               <div class="text-text-secondary text-sm">Startup Founded</div>
             </div>
@@ -67,7 +75,10 @@ const categories = [
 
     <section class="py-20 bg-white">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <SectionHeading title-key="technologies.title" subtitle-key="technologies.subtitle" />
+        <SectionHeading
+          title-key="technologies.title"
+          subtitle-key="technologies.subtitle"
+        />
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div
@@ -77,7 +88,10 @@ const categories = [
             :style="{ animationDelay: `${0.1 * index}s` }"
           >
             <h3 class="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
-              <i :class="category.icon" class="text-accent"></i>
+              <i
+                :class="category.icon"
+                class="text-accent"
+              ></i>
               {{ t(category.labelKey) }}
             </h3>
             <div class="flex flex-wrap gap-2">
@@ -96,7 +110,10 @@ const categories = [
 
     <section class="py-20 bg-background">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <SectionHeading title-key="experience.title" subtitle-key="experience.subtitle" />
+        <SectionHeading
+          title-key="experience.title"
+          subtitle-key="experience.subtitle"
+        />
 
         <div class="max-w-3xl mx-auto">
           <TimelineItem

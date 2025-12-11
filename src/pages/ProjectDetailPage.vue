@@ -15,7 +15,9 @@ const project = computed(() => getProjectById(route.params.id as string))
 <template>
   <div class="pt-20 min-h-screen">
     <div v-if="project">
-      <section class="py-12 bg-gradient-to-br from-primary via-secondary to-primary text-white relative overflow-hidden">
+      <section
+        class="py-12 bg-gradient-to-br from-primary via-secondary to-primary text-white relative overflow-hidden"
+      >
         <div class="absolute inset-0 bg-[url('data:image/svg+xml,...')] opacity-10"></div>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
           <RouterLink
@@ -26,24 +28,46 @@ const project = computed(() => getProjectById(route.params.id as string))
             Back to Projects
           </RouterLink>
 
-          <div v-if="project.badge?.type === 'isef'" class="mb-4 animate-fade-in-up" style="animation-delay: 0.1s">
-            <span class="inline-flex items-center gap-2 text-sm font-medium text-white bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
-              <img src="https://www.societyforscience.org/wp-content/uploads/2023/08/ISEF-Logo-Full-Color.png" alt="Intel ISEF" class="h-5 w-auto brightness-0 invert" />
+          <div
+            v-if="project.badge?.type === 'isef'"
+            class="mb-4 animate-fade-in-up"
+            style="animation-delay: 0.1s"
+          >
+            <span
+              class="inline-flex items-center gap-2 text-sm font-medium text-white bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full"
+            >
+              <img
+                src="https://www.societyforscience.org/wp-content/uploads/2023/08/ISEF-Logo-Full-Color.png"
+                alt="Intel ISEF"
+                class="h-5 w-auto brightness-0 invert"
+              />
               {{ project.badge.label }}
             </span>
           </div>
-          <div v-else-if="project.awards" class="mb-4 animate-fade-in-up" style="animation-delay: 0.1s">
-            <span class="inline-flex items-center gap-2 text-sm font-medium text-yellow-300 bg-yellow-500/20 px-3 py-1 rounded-full">
+          <div
+            v-else-if="project.awards"
+            class="mb-4 animate-fade-in-up"
+            style="animation-delay: 0.1s"
+          >
+            <span
+              class="inline-flex items-center gap-2 text-sm font-medium text-yellow-300 bg-yellow-500/20 px-3 py-1 rounded-full"
+            >
               <i class="fa-solid fa-trophy"></i>
               Award-Winning Project
             </span>
           </div>
 
-          <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up" style="animation-delay: 0.15s">
+          <h1
+            class="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up"
+            style="animation-delay: 0.15s"
+          >
             {{ t(project.titleKey) }}
           </h1>
 
-          <div class="flex flex-wrap gap-6 text-white/80 mb-6 animate-fade-in-up" style="animation-delay: 0.2s">
+          <div
+            class="flex flex-wrap gap-6 text-white/80 mb-6 animate-fade-in-up"
+            style="animation-delay: 0.2s"
+          >
             <span class="flex items-center gap-2">
               <i class="fa-solid fa-user"></i>
               {{ project.role }}
@@ -54,7 +78,10 @@ const project = computed(() => getProjectById(route.params.id as string))
             </span>
           </div>
 
-          <div class="flex flex-wrap gap-2 animate-fade-in-up" style="animation-delay: 0.25s">
+          <div
+            class="flex flex-wrap gap-2 animate-fade-in-up"
+            style="animation-delay: 0.25s"
+          >
             <TechBadge
               v-for="tech in project.technologies"
               :key="tech"
@@ -73,7 +100,11 @@ const project = computed(() => getProjectById(route.params.id as string))
             </p>
           </div>
 
-          <div v-if="project.awards && project.awards.length > 0" class="mb-12 animate-fade-in-up" style="animation-delay: 0.1s">
+          <div
+            v-if="project.awards && project.awards.length > 0"
+            class="mb-12 animate-fade-in-up"
+            style="animation-delay: 0.1s"
+          >
             <h2 class="text-2xl font-bold text-primary mb-6 flex items-center gap-3">
               <i class="fa-solid fa-trophy text-yellow-500"></i>
               {{ t('projects.awards') }}
@@ -85,7 +116,9 @@ const project = computed(() => getProjectById(route.params.id as string))
                 class="bg-gradient-to-br from-yellow-50 to-amber-50 border border-yellow-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
               >
                 <div class="flex items-start gap-4">
-                  <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div
+                    class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0"
+                  >
                     <i class="fa-solid fa-medal text-white text-xl"></i>
                   </div>
                   <div>
@@ -97,7 +130,11 @@ const project = computed(() => getProjectById(route.params.id as string))
             </div>
           </div>
 
-          <div v-if="project.highlights && project.highlights.length > 0" class="mb-12 animate-fade-in-up" style="animation-delay: 0.15s">
+          <div
+            v-if="project.highlights && project.highlights.length > 0"
+            class="mb-12 animate-fade-in-up"
+            style="animation-delay: 0.15s"
+          >
             <h2 class="text-2xl font-bold text-primary mb-6 flex items-center gap-3">
               <i class="fa-solid fa-star text-accent"></i>
               {{ t('projects.highlights') }}
@@ -108,7 +145,9 @@ const project = computed(() => getProjectById(route.params.id as string))
                 :key="highlight"
                 class="flex items-start gap-4 p-4 bg-background rounded-xl hover:shadow-md transition-shadow"
               >
-                <div class="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <div
+                  class="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0"
+                >
                   <span class="text-accent font-bold text-sm">{{ index + 1 }}</span>
                 </div>
                 <span class="text-text-secondary">{{ t(highlight) }}</span>
@@ -116,7 +155,11 @@ const project = computed(() => getProjectById(route.params.id as string))
             </ul>
           </div>
 
-          <div v-if="project.links && project.links.length > 0" class="animate-fade-in-up" style="animation-delay: 0.2s">
+          <div
+            v-if="project.links && project.links.length > 0"
+            class="animate-fade-in-up"
+            style="animation-delay: 0.2s"
+          >
             <h2 class="text-2xl font-bold text-primary mb-6 flex items-center gap-3">
               <i class="fa-solid fa-link text-accent"></i>
               {{ t('projects.links') }}
@@ -137,11 +180,17 @@ const project = computed(() => getProjectById(route.params.id as string))
       </section>
     </div>
 
-    <div v-else class="flex items-center justify-center min-h-[60vh]">
+    <div
+      v-else
+      class="flex items-center justify-center min-h-[60vh]"
+    >
       <div class="text-center">
         <i class="fa-solid fa-folder-open text-6xl text-gray-300 mb-4"></i>
         <h2 class="text-2xl font-bold text-primary mb-2">Project Not Found</h2>
-        <RouterLink to="/projects" class="text-accent hover:underline">
+        <RouterLink
+          to="/projects"
+          class="text-accent hover:underline"
+        >
           Back to Projects
         </RouterLink>
       </div>

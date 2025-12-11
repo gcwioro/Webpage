@@ -8,10 +8,7 @@ export function deepEqual<T>(a: T, b: T): boolean {
 
   if (keysA.length !== keysB.length) return false
 
-  return keysA.every(key =>
-    deepEqual(
-      (a as Record<string, unknown>)[key],
-      (b as Record<string, unknown>)[key]
-    )
+  return keysA.every((key) =>
+    deepEqual((a as Record<string, unknown>)[key], (b as Record<string, unknown>)[key])
   )
 }

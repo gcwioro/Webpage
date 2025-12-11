@@ -9,7 +9,7 @@ export const experiences: Experience[] = [
     startDate: '2024',
     endDate: null,
     descriptionKey: 'experience.positions.freelance.description',
-    technologies: ['.NET', 'Vue 3', 'TypeScript', 'API Design']
+    technologies: ['.NET', 'Vue 3', 'TypeScript', 'API Design'],
   },
   {
     id: 'autoletter',
@@ -19,7 +19,7 @@ export const experiences: Experience[] = [
     startDate: '2024',
     endDate: null,
     descriptionKey: 'experience.positions.autoletter.description',
-    technologies: ['Full-Stack', 'Startup']
+    technologies: ['Full-Stack', 'Startup'],
   },
   {
     id: 'timetoact',
@@ -29,7 +29,7 @@ export const experiences: Experience[] = [
     startDate: '2024-05',
     endDate: null,
     descriptionKey: 'experience.positions.timetoact.description',
-    technologies: ['.NET', 'Vue 3', 'TypeScript', 'DDD']
+    technologies: ['.NET', 'Vue 3', 'TypeScript', 'DDD'],
   },
   {
     id: 'trustbit',
@@ -39,7 +39,7 @@ export const experiences: Experience[] = [
     startDate: '2022-05',
     endDate: '2024-05',
     descriptionKey: 'experience.positions.trustbit.description',
-    technologies: ['C#', '.NET', 'Vue 3', 'TypeScript', 'DDD']
+    technologies: ['C#', '.NET', 'Vue 3', 'TypeScript', 'DDD'],
   },
   {
     id: 'kickscale',
@@ -49,7 +49,7 @@ export const experiences: Experience[] = [
     startDate: '2021-04',
     endDate: '2022-04',
     descriptionKey: 'experience.positions.kickscale.description',
-    technologies: ['React', 'TypeScript', 'Firebase', 'GitHub Actions']
+    technologies: ['React', 'TypeScript', 'Firebase', 'GitHub Actions'],
   },
   {
     id: 'hex',
@@ -59,6 +59,6 @@ export const experiences: Experience[] = [
     startDate: '2019-03',
     endDate: '2021-03',
     descriptionKey: 'experience.positions.hex.description',
-    technologies: ['.NET Core', 'Node.js', 'TypeScript', 'MongoDB', 'Docker', 'GCP']
-  }
+    technologies: ['.NET Core', 'Node.js', 'TypeScript', 'MongoDB', 'Docker', 'GCP'],
+  },
 ]

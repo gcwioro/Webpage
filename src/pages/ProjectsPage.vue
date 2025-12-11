@@ -2,10 +2,9 @@
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { RouterLink } from 'vue-router'
-import SectionHeading from '@/components/ui/SectionHeading.vue'
 import TechBadge from '@/components/ui/TechBadge.vue'
 import { projects } from '@/data/projects'
-
+import logoIsef from '@/assets/icef.png'
 const { t } = useI18n()
 
 const selectedFilter = ref<string>('all')
@@ -15,13 +14,15 @@ const filters = ['all', 'startup', 'enterprise', 'research']
 const filteredProjects = computed(() => {
   if (selectedFilter.value === 'all') return projects
   if (selectedFilter.value === 'startup') {
-    return projects.filter(p => ['autoletter', 'kickscale', 'saraas'].includes(p.id))
+    return projects.filter((p) => ['autoletter', 'kickscale', 'saraas'].includes(p.id))
   }
   if (selectedFilter.value === 'enterprise') {
-    return projects.filter(p => ['noborder', 'trustbit-ddd', 'hex-optimization', 'satalia-vrp'].includes(p.id))
+    return projects.filter((p) =>
+      ['noborder', 'trustbit-ddd', 'hex-optimization', 'satalia-vrp'].includes(p.id)
+    )
   }
   if (selectedFilter.value === 'research') {
-    return projects.filter(p => ['adhoc-routing', 'bitmoving-video'].includes(p.id))
+    return projects.filter((p) => ['adhoc-routing', 'bitmoving-video'].includes(p.id))
   }
   return projects
 })
@@ -32,22 +33,31 @@ const filteredProjects = computed(() => {
     <section class="py-20 bg-gradient-to-br from-background via-white to-blue-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-12 animate-fade-in-up">
-          <h1 class="text-4xl md:text-5xl font-bold text-gradient mb-4">{{ t('projects.title') }}</h1>
+          <h1 class="text-4xl md:text-5xl font-bold text-gradient mb-4">
+            {{ t('projects.title') }}
+          </h1>
           <p class="text-xl text-text-secondary max-w-2xl mx-auto">{{ t('projects.subtitle') }}</p>
           <div class="w-20 h-1 bg-gradient-accent mx-auto mt-4 rounded-full"></div>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-3 mb-12 animate-fade-in-up" style="animation-delay: 0.1s">
+        <div
+          class="flex flex-wrap justify-center gap-3 mb-12 animate-fade-in-up"
+          style="animation-delay: 0.1s"
+        >
           <button
             v-for="filter in filters"
             :key="filter"
             @click="selectedFilter = filter"
             class="px-6 py-2 rounded-full font-medium transition-all duration-300"
-            :class="selectedFilter === filter
-              ? 'bg-gradient-accent text-white shadow-lg'
-              : 'bg-white text-text-secondary hover:bg-gray-100'"
+            :class="
+              selectedFilter === filter
+                ? 'bg-gradient-accent text-white shadow-lg'
+                : 'bg-white text-text-secondary hover:bg-gray-100'
+            "
           >
-            {{ filter === 'all' ? 'All Projects' : filter.charAt(0).toUpperCase() + filter.slice(1) }}
+            {{
+              filter === 'all' ? 'All Projects' : filter.charAt(0).toUpperCase() + filter.slice(1)
+            }}
           </button>
         </div>
 
@@ -66,19 +76,35 @@ const filteredProjects = computed(() => {
             <div class="p-6">
               <div class="flex items-start justify-between mb-3">
                 <div>
-                  <div v-if="project.badge?.type === 'isef'" class="mb-2">
-                    <span class="inline-flex items-center gap-2 text-xs font-medium text-blue-700 bg-blue-100 px-2.5 py-1 rounded-full">
-                      <img src="https://www.societyforscience.org/wp-content/uploads/2023/08/ISEF-Logo-Full-Color.png" alt="Intel ISEF" class="h-4 w-auto" />
+                  <div
+                    v-if="project.badge?.type === 'isef'"
+                    class="mb-2"
+                  >
+                    <span
+                      class="inline-flex items-center gap-2 text-xs font-medium text-blue-700 bg-blue-100 px-2.5 py-1 rounded-full"
+                    >
+                      <img
+                        :src="logoIsef"
+                        alt="Intel ISEF"
+                        class="h-4 w-auto"
+                      />
                       {{ project.badge.label }}
                     </span>
                   </div>
-                  <div v-else-if="project.awards" class="mb-2">
-                    <span class="inline-flex items-center gap-1 text-xs font-medium text-yellow-600 bg-yellow-100 px-2 py-1 rounded-full">
+                  <div
+                    v-else-if="project.awards"
+                    class="mb-2"
+                  >
+                    <span
+                      class="inline-flex items-center gap-1 text-xs font-medium text-yellow-600 bg-yellow-100 px-2 py-1 rounded-full"
+                    >
                       <i class="fa-solid fa-trophy"></i>
                       Award Winner
                     </span>
                   </div>
-                  <h3 class="text-xl font-bold text-primary group-hover:text-accent transition-colors">
+                  <h3
+                    class="text-xl font-bold text-primary group-hover:text-accent transition-colors"
+                  >
                     {{ t(project.titleKey) }}
                   </h3>
                 </div>
@@ -108,7 +134,9 @@ const filteredProjects = computed(() => {
 
               <div class="flex items-center justify-between text-sm pt-4 border-t border-gray-100">
                 <span class="text-text-secondary">{{ project.role }}</span>
-                <span class="text-accent font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span
+                  class="text-accent font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all"
+                >
                   View Details
                   <i class="fa-solid fa-arrow-right"></i>
                 </span>
