@@ -1,0 +1,215 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "services": "Leistungen",
+    "technologies": "Technologien",
+    "experience": "Lebenslauf",
+    "projects": "Portfolio",
+    "contact": "Kontakt",
+    "overview": "Übersicht"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Günther Cwioro",
+    "title": "Full-Stack Software Engineer",
+    "tagline": "Ich entwickle robuste, skalierbare Softwarelösungen mit über 10 Jahren Erfahrung in .NET, Vue 3 und Cloud-Architekturen.",
+    "cta_contact": "Kontakt aufnehmen",
+    "cta_projects": "Projekte ansehen"
+  },
+  "about": {
+    "title": "Über mich",
+    "p1": "Seit meiner frühen Jugend interessiere ich mich für Computer und wollte immer verstehen, wie sie funktionieren. In der Mittelschule bekam ich ein altes Java-Programmierbuch von einem Verwandten meines Freundes und begann es zu lesen. Kurz darauf war mein erstes Computerprogramm geschrieben und kompiliert.",
+    "p2": "Seitdem bin ich leidenschaftlich beim Programmieren und genieße es. Neben meiner Liebe zum Coden bin ich ein sehr aufgeschlossener Mensch, der immer versucht, die sonnigen Seiten des Lebens zu sehen. Ich bin sehr loyal und arbeite gerne mit Teammitgliedern zusammen, um gemeinsam Ziele zu erreichen.",
+    "p3": "Ich bin leidenschaftlich daran interessiert, Neues zu lernen oder auszuprobieren – sei es eine neue Programmiersprache, ein Framework oder eine Sportart, die ich noch nie gemacht habe.",
+    "location": "Villach, Österreich",
+    "available": "Verfügbar für Projekte"
+  },
+  "services": {
+    "title": "Leistungen",
+    "subtitle": "Wie ich Sie unterstützen kann",
+    "backend": {
+      "title": "Backend-Entwicklung",
+      "description": "Robuste APIs und Microservices mit .NET/C#, Node.js und Domain-Driven Design. Fokus auf saubere Architektur und wartbaren Code."
+    },
+    "frontend": {
+      "title": "Frontend-Entwicklung",
+      "description": "Moderne, reaktive Web-Anwendungen mit Vue 3 und TypeScript. Responsive Design und optimale User Experience."
+    },
+    "architecture": {
+      "title": "System-Architektur",
+      "description": "Skalierbare Cloud-Architekturen auf GCP. Microservices-Design, Container-Orchestrierung mit Kubernetes und Docker."
+    },
+    "consulting": {
+      "title": "Technische Beratung",
+      "description": "Code Reviews, Architektur-Audits und technische Beratung. Unterstützung bei der Einführung von DDD und Best Practices."
+    }
+  },
+  "technologies": {
+    "title": "Technologien",
+    "subtitle": "Mein Tech-Stack",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloud": "Cloud & DevOps",
+      "methods": "Methoden"
+    }
+  },
+  "experience": {
+    "title": "Berufserfahrung",
+    "subtitle": "Mein Werdegang",
+    "present": "Heute",
+    "positions": {
+      "freelance": {
+        "title": "Freelance Software Engineer",
+        "description": "Freelance-Karriere gestartet für mehr Flexibilität beim Aufbau meines eigenen Startups. Arbeit mit verschiedenen Kunden an Backend-Entwicklung und API-Design."
+      },
+      "autoletter": {
+        "title": "Gründer",
+        "description": "Eigenes Startup gegründet, fokussiert auf automatisierte Brieferstellung und Zustellservices."
+      },
+      "timetoact": {
+        "title": "Senior Full-Stack Developer",
+        "description": "Fortsetzung meiner Rolle nach der Übernahme von Trustbit durch TimeToAct Group Austria. Teilzeit als Senior Full-Stack Developer während ich meine eigenen Projekte verfolge."
+      },
+      "trustbit": {
+        "title": "Senior Full-Stack Developer",
+        "description": "Senior Full-Stack Developer mit Fokus auf C#, .NET und Vue 3 (TypeScript). Intensive Beschäftigung mit Domain-Driven Design (DDD). Teilnahme an DDD Europe (Amsterdam) und Kandddinsky (Berlin) Konferenzen."
+      },
+      "kickscale": {
+        "title": "Lead Developer",
+        "description": "Lead-Developer der SaaS-Plattform von Kickscale. React und Node.js, Firebase, Cloud Functions, Github Actions."
+      },
+      "hex": {
+        "title": "Software Engineer",
+        "description": "Entwicklung cloud-basierter Softwarelösungen für Optimierung. Aufgaben reichten von Backend-Design und -Entwicklung bis zur Implementierung von Optimierungsalgorithmen. Verantwortlich für Deployment, Monitoring und Wartung auf Google Cloud Platform."
+      }
+    }
+  },
+  "projects": {
+    "title": "Portfolio",
+    "subtitle": "Ausgewählte Projekte",
+    "viewDetails": "Details ansehen",
+    "close": "Schließen",
+    "role": "Rolle",
+    "year": "Jahr",
+    "technologies": "Technologien",
+    "highlights": "Highlights",
+    "awards": "Auszeichnungen",
+    "links": "Links",
+    "adhoc": {
+      "title": "AD-HOC WLAN Routing Protocol",
+      "description": "Preisgekröntes Forschungsprojekt: Entwicklung eines zuverlässigen Multi-Cast Routing-Protokolls auf Layer 2 für Roboter-Schwärme.",
+      "fullDescription": "Während meiner HTL-Zeit entwickelte ich als Teil meiner Diplomarbeit ein AD-HOC WLAN Routing-Protokoll auf Layer 2 in C++. Das Projekt wurde am Institut für Vernetzte und Eingebettete Systeme der Alpen-Adria Universität Klagenfurt durchgeführt. Ziel war die Implementierung eines zuverlässigen Multi-Cast Routing-Protokolls für autonome Roboter, das eine dezentrale Kommunikation ohne zentrale Infrastruktur ermöglicht.",
+      "highlights": {
+        "0": "Implementierung eines vollständigen Layer-2 AD-HOC Netzwerk-Stacks in C++",
+        "1": "Integration in das Robot Operating System (ROS) für Roboter-Schwärme",
+        "2": "Veröffentlichung als Open-Source-Projekt mit wissenschaftlicher Publikation",
+        "3": "Dezentrale Kommunikation ohne zentrale Netzwerk-Infrastruktur"
+      },
+      "awards": {
+        "jugendinnovativ": {
+          "title": "1. Platz Jugendinnovativ 2014",
+          "description": "Gewinner des österreichischen Jugend-Innovationswettbewerbs in der Kategorie 'Engineering'. Der renommierteste Wettbewerb für innovative Projekte von Schülern in Österreich."
+        },
+        "isef": {
+          "title": "Intel ISEF Teilnahme",
+          "description": "Vertretung Österreichs bei der Intel International Science and Engineering Fair (ISEF) in Los Angeles – dem weltweit größten internationalen Wissenschaftswettbewerb für Schüler."
+        }
+      }
+    },
+    "autoletter": {
+      "title": "Autoletter.at",
+      "description": "Eigenes Startup für automatisierte Brieferstellung und Zustellservices. Full-Stack-Entwicklung von der Idee bis zum Produkt.",
+      "fullDescription": "Autoletter.at ist mein eigenes Startup, das ich 2024 gegründet habe. Die Plattform automatisiert den gesamten Prozess der Brieferstellung und -zustellung. Kunden können über eine API oder Web-Oberfläche Briefe erstellen, die dann automatisch gedruckt, kuvertiert und per Post versendet werden.",
+      "highlights": {
+        "0": "Vollständige Full-Stack-Entwicklung von Konzept bis Produktion",
+        "1": "API-first Design für einfache Integration in bestehende Systeme",
+        "2": "Automatisierte Druckaufbereitung und Versandabwicklung"
+      }
+    },
+    "noborder": {
+      "title": "No Border Dashboard",
+      "description": "Dashboard für Bestellverfolgung und -untersuchung, das Kunden ermöglicht, ihre Sendungen in Echtzeit zu überwachen.",
+      "fullDescription": "Für das Fulfillment-Startup No Border entwickelte ich ein umfassendes Dashboard zur Bestellverfolgung. Die Plattform ermöglicht es Kunden, ihre Sendungen in Echtzeit zu verfolgen und bei Problemen schnell die Ursachen zu identifizieren. Zusätzlich wurden API-Schnittstellen für die Integration mit der Fulfillment-Plattform implementiert.",
+      "highlights": {
+        "0": "Echtzeit-Tracking von Sendungen mit Live-Updates",
+        "1": "Umfassende API-Schnittstellen für Kundenintegration",
+        "2": "Investigative Tools zur schnellen Problemidentifikation"
+      }
+    },
+    "trustbit": {
+      "title": "DDD Enterprise-Projekte",
+      "description": "Entwicklung komplexer Enterprise-Anwendungen mit Domain-Driven Design, Event Sourcing und CQRS.",
+      "fullDescription": "Bei Trustbit und später TimeToAct Group Austria arbeitete ich an mehreren Enterprise-Projekten mit Fokus auf Domain-Driven Design. Die Projekte umfassten komplexe Geschäftslogik, die mit Event Sourcing und CQRS-Patterns umgesetzt wurde. Ich nahm an den Konferenzen DDD Europe (Amsterdam) und Kandddinsky (Berlin) teil.",
+      "highlights": {
+        "0": "Implementierung komplexer Domänenmodelle mit DDD-Patterns",
+        "1": "Event Sourcing für vollständige Audit-Trails und Reproduzierbarkeit",
+        "2": "CQRS-Architektur für optimale Lese- und Schreiboperationen"
+      }
+    },
+    "kickscale": {
+      "title": "Kickscale SaaS",
+      "description": "Lead-Entwicklung einer SaaS-Plattform für Sales-Teams. React Frontend mit Firebase Backend.",
+      "fullDescription": "Als Lead Developer bei Kickscale war ich verantwortlich für die Entwicklung der gesamten SaaS-Plattform. Die Anwendung unterstützt Sales-Teams bei der Verwaltung ihrer Kundenbeziehungen und automatisiert wiederkehrende Aufgaben. Die Architektur basiert auf React im Frontend und Firebase im Backend mit Cloud Functions für serverlose Logik.",
+      "highlights": {
+        "0": "Technische Führung des gesamten Entwicklungsteams",
+        "1": "Serverlose Architektur mit Firebase und Cloud Functions",
+        "2": "CI/CD-Pipeline mit GitHub Actions für automatisierte Deployments"
+      }
+    },
+    "saraas": {
+      "title": "SaRaaS - Scheduling & Routing as a Service",
+      "description": "Build! Gründerprogramm-Projekt: Entwicklung maßgeschneiderter Optimierungslösungen für Scheduling- und Routing-Probleme.",
+      "fullDescription": "Im Rahmen des Build! Gründerprogramms an der Alpen-Adria-Universität Klagenfurt habe ich ein Projekt zur Entwicklung einer Scheduling and Routing as a Service Plattform mitgegründet. Wir entwickelten grundlegende Algorithmen für Scheduling- und Routing-Optimierungsprobleme mit Fokus auf Performance-Effizienz. Die Plattform liefert Lösungen innerhalb von Sekunden, was für reale Anwendungen entscheidend ist.",
+      "highlights": {
+        "0": "Entwicklung hochperformanter Optimierungsalgorithmen",
+        "1": "Co-Autor einer wissenschaftlichen Publikation auf arXiv",
+        "2": "Zusammenarbeit mit dem Institut für Mathematik"
+      }
+    },
+    "satalia": {
+      "title": "Vehicle Routing Optimization",
+      "description": "Entwicklung von Optimierungsbibliotheken für das Vehicle Routing Problem (VRP) für Großkunden.",
+      "fullDescription": "Bei Satalia NPCOMPLETE war ich Teil des Backend-Optimierungsteams. Wir entwickelten Optimierungsbibliotheken in Java 8 für große Kunden aus der Logistikbranche. Meine Hauptverantwortung war die Implementierung von Optimierungsmethoden und Heuristiken für spezialisierte Teilprobleme des Vehicle Routing Problems (VRP).",
+      "highlights": {
+        "0": "Implementierung von Heuristiken für das Vehicle Routing Problem",
+        "1": "Optimierung von Lieferrouten zur Maximierung der Kapazitätsauslastung",
+        "2": "Strikte Code-Qualität – Fehler hätten Millionenkosten verursacht"
+      }
+    },
+    "bitmoving": {
+      "title": "Cloud Video Encoding",
+      "description": "Entwicklung eines verteilten Cloud-Video-Encoding-Services für MPEG-DASH und HLS Content.",
+      "fullDescription": "Bei Bitmoving arbeitete ich an einem verteilten Cloud-Video-Encoding-Service. Das System konvertierte Videos in MPEG-DASH und HLS Formate für Streaming-Anwendungen. Ich begann als Junior C++ Entwickler und entwickelte mich zum polyglotten Entwickler mit Erfahrung in Java, PHP und Python.",
+      "highlights": {
+        "0": "Verteilte Video-Encoding-Pipeline in der Cloud",
+        "1": "Unterstützung von MPEG-DASH und HLS Streaming-Formaten",
+        "2": "Entwicklung in mehreren Sprachen: C++, Java, PHP, Python"
+      }
+    },
+    "optimization": {
+      "title": "Cloud-Optimierung (Hex)",
+      "description": "Cloud-basierte Optimierungslösungen auf GCP. Microservices-Architektur für Skalierbarkeit.",
+      "fullDescription": "Bei Hex GmbH entwickelte ich cloud-basierte Softwarelösungen für Optimierungsprobleme. Die Aufgaben reichten vom Design und der Entwicklung von Backend-Services bis zur Implementierung von Optimierungsalgorithmen und Heuristiken. Ich war verantwortlich für das Deployment, Monitoring und die Wartung auf der Google Cloud Platform.",
+      "highlights": {
+        "0": "Microservices-Architektur auf Google Cloud Platform",
+        "1": "Implementierung von Optimierungsalgorithmen und Heuristiken",
+        "2": "High-Availability APIs mit Container-Orchestrierung"
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Lassen Sie uns zusammenarbeiten",
+    "description": "Haben Sie ein Projekt im Kopf oder möchten Sie einfach Hallo sagen? Ich freue mich auf Ihre Nachricht.",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "location": "Standort",
+    "cta": "E-Mail schreiben"
+  },
+  "footer": {
+    "copyright": "Alle Rechte vorbehalten.",
+    "built_with": "Gebaut mit Vue 3 & Tailwind CSS"
+  }
+}

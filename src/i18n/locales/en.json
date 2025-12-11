@@ -1,0 +1,215 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "technologies": "Technologies",
+    "experience": "Experience",
+    "projects": "Portfolio",
+    "contact": "Contact",
+    "overview": "Overview"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Günther Cwioro",
+    "title": "Full-Stack Software Engineer",
+    "tagline": "I build robust, scalable software solutions with over 10 years of experience in .NET, Vue 3, and cloud architectures.",
+    "cta_contact": "Get in Touch",
+    "cta_projects": "View Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "Since my early age, I am interested in computers and always wanted to understand how computers work. In middle school, I got an old Java programming book from a relative of my friend and I started reading it. Shortly thereafter, my first computer program was written and compiled.",
+    "p2": "Since that moment I am passionate about programming and enjoy it. Besides my love for coding, I am a very open-minded person, who always tries to see the sunny sides in life. I am very loyal and love to work with team members to tackle targets together.",
+    "p3": "I am passionate about learning new things or trying out something new, such as new programming languages, frameworks, or a sport I have never done before.",
+    "location": "Villach, Austria",
+    "available": "Available for projects"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "How I can support you",
+    "backend": {
+      "title": "Backend Development",
+      "description": "Robust APIs and microservices with .NET/C#, Node.js and Domain-Driven Design. Focus on clean architecture and maintainable code."
+    },
+    "frontend": {
+      "title": "Frontend Development",
+      "description": "Modern, reactive web applications with Vue 3 and TypeScript. Responsive design and optimal user experience."
+    },
+    "architecture": {
+      "title": "System Architecture",
+      "description": "Scalable cloud architectures on GCP. Microservices design, container orchestration with Kubernetes and Docker."
+    },
+    "consulting": {
+      "title": "Technical Consulting",
+      "description": "Code reviews, architecture audits and technical consulting. Support for implementing DDD and best practices."
+    }
+  },
+  "technologies": {
+    "title": "Technologies",
+    "subtitle": "My Tech Stack",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloud": "Cloud & DevOps",
+      "methods": "Methods"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My Journey",
+    "present": "Present",
+    "positions": {
+      "freelance": {
+        "title": "Freelance Software Engineer",
+        "description": "Started my freelance career to have more flexibility while building my own startup. Working with various clients on backend development and API design."
+      },
+      "autoletter": {
+        "title": "Founder",
+        "description": "Founded my own startup focused on automated letter generation and delivery services."
+      },
+      "timetoact": {
+        "title": "Senior Full-Stack Developer",
+        "description": "Continuation of my role after Trustbit was acquired by TimeToAct Group Austria. Working part-time as Senior Full-Stack Developer while pursuing my own ventures."
+      },
+      "trustbit": {
+        "title": "Senior Full-Stack Developer",
+        "description": "Senior Full-Stack Developer with focus on C#, .NET and Vue 3 (TypeScript). Deeply engaged with Domain-Driven Design (DDD) methodology. Attended DDD Europe (Amsterdam) and Kandddinsky (Berlin) conferences."
+      },
+      "kickscale": {
+        "title": "Lead Developer",
+        "description": "Lead-Developer of Kickscale's SaaS platform. React and Node.js, Firebase, Cloud Functions, Github Actions."
+      },
+      "hex": {
+        "title": "Software Engineer",
+        "description": "Development of cloud-based software solutions for optimization. Tasks ranged from backend design and development to implementation of optimization algorithms. Responsible for deployment, monitoring and maintenance on Google Cloud Platform."
+      }
+    }
+  },
+  "projects": {
+    "title": "Portfolio",
+    "subtitle": "Selected Projects",
+    "viewDetails": "View Details",
+    "close": "Close",
+    "role": "Role",
+    "year": "Year",
+    "technologies": "Technologies",
+    "highlights": "Highlights",
+    "awards": "Awards",
+    "links": "Links",
+    "adhoc": {
+      "title": "AD-HOC WLAN Routing Protocol",
+      "description": "Award-winning research project: Development of a reliable multi-cast routing protocol on Layer 2 for robot swarms.",
+      "fullDescription": "During my time at technical high school, I developed an AD-HOC WLAN routing protocol on Layer 2 in C++ as part of my thesis. The project was conducted at the Institute for Networked and Embedded Systems at Alpen-Adria University Klagenfurt. The goal was to implement a reliable multi-cast routing protocol for autonomous robots, enabling decentralized communication without central infrastructure.",
+      "highlights": {
+        "0": "Implementation of a complete Layer-2 AD-HOC network stack in C++",
+        "1": "Integration into the Robot Operating System (ROS) for robot swarms",
+        "2": "Published as open-source project with scientific publication",
+        "3": "Decentralized communication without central network infrastructure"
+      },
+      "awards": {
+        "jugendinnovativ": {
+          "title": "1st Place Jugendinnovativ 2014",
+          "description": "Winner of the Austrian Youth Innovation Competition in the 'Engineering' category. The most prestigious competition for innovative student projects in Austria."
+        },
+        "isef": {
+          "title": "Intel ISEF Participation",
+          "description": "Represented Austria at the Intel International Science and Engineering Fair (ISEF) in Los Angeles – the world's largest international science competition for high school students."
+        }
+      }
+    },
+    "autoletter": {
+      "title": "Autoletter.at",
+      "description": "Own startup for automated letter generation and delivery services. Full-stack development from idea to product.",
+      "fullDescription": "Autoletter.at is my own startup, which I founded in 2024. The platform automates the entire process of letter creation and delivery. Customers can create letters via an API or web interface, which are then automatically printed, enveloped, and sent via postal service.",
+      "highlights": {
+        "0": "Complete full-stack development from concept to production",
+        "1": "API-first design for easy integration into existing systems",
+        "2": "Automated print preparation and shipping processing"
+      }
+    },
+    "noborder": {
+      "title": "No Border Dashboard",
+      "description": "Dashboard for order tracking and investigation, enabling clients to monitor their shipments in real-time.",
+      "fullDescription": "For the fulfillment startup No Border, I developed a comprehensive dashboard for order tracking. The platform enables customers to track their shipments in real-time and quickly identify causes when problems occur. Additionally, API interfaces were implemented for integration with the fulfillment platform.",
+      "highlights": {
+        "0": "Real-time shipment tracking with live updates",
+        "1": "Comprehensive API interfaces for customer integration",
+        "2": "Investigative tools for quick problem identification"
+      }
+    },
+    "trustbit": {
+      "title": "DDD Enterprise Projects",
+      "description": "Development of complex enterprise applications with Domain-Driven Design, Event Sourcing and CQRS.",
+      "fullDescription": "At Trustbit and later TimeToAct Group Austria, I worked on several enterprise projects with a focus on Domain-Driven Design. The projects involved complex business logic implemented using Event Sourcing and CQRS patterns. I attended the DDD Europe (Amsterdam) and Kandddinsky (Berlin) conferences.",
+      "highlights": {
+        "0": "Implementation of complex domain models with DDD patterns",
+        "1": "Event Sourcing for complete audit trails and reproducibility",
+        "2": "CQRS architecture for optimal read and write operations"
+      }
+    },
+    "kickscale": {
+      "title": "Kickscale SaaS",
+      "description": "Lead development of a SaaS platform for sales teams. React frontend with Firebase backend.",
+      "fullDescription": "As Lead Developer at Kickscale, I was responsible for developing the entire SaaS platform. The application supports sales teams in managing their customer relationships and automates recurring tasks. The architecture is based on React in the frontend and Firebase in the backend with Cloud Functions for serverless logic.",
+      "highlights": {
+        "0": "Technical leadership of the entire development team",
+        "1": "Serverless architecture with Firebase and Cloud Functions",
+        "2": "CI/CD pipeline with GitHub Actions for automated deployments"
+      }
+    },
+    "saraas": {
+      "title": "SaRaaS - Scheduling & Routing as a Service",
+      "description": "Build! founders program project: Developing customized optimization solutions for scheduling and routing problems.",
+      "fullDescription": "As part of the Build! founders program at Alpen-Adria-Universität Klagenfurt, I co-founded a project developing a Scheduling and Routing as a Service platform. We designed foundational algorithms for scheduling and routing optimization problems with emphasis on performance efficiency. The platform delivers solutions within seconds of processing time, crucial for real-world applications.",
+      "highlights": {
+        "0": "Development of high-performance optimization algorithms",
+        "1": "Co-authored academic paper published on arXiv",
+        "2": "Collaboration with the Institute for Mathematics"
+      }
+    },
+    "satalia": {
+      "title": "Vehicle Routing Optimization",
+      "description": "Development of optimization libraries for the Vehicle Routing Problem (VRP) for large-scale clients.",
+      "fullDescription": "At Satalia NPCOMPLETE, I was part of the backend optimization team. We developed optimization libraries in Java 8 for large clients in the logistics industry. My main responsibility was implementing optimization methods and heuristics for specialized sub-problems of the Vehicle Routing Problem (VRP).",
+      "highlights": {
+        "0": "Implementation of heuristics for the Vehicle Routing Problem",
+        "1": "Route optimization to maximize capacity utilization",
+        "2": "Strict code quality – bugs would have cost millions"
+      }
+    },
+    "bitmoving": {
+      "title": "Cloud Video Encoding",
+      "description": "Development of a distributed cloud video encoding service for MPEG-DASH and HLS content.",
+      "fullDescription": "At Bitmoving, I worked on a distributed cloud video encoding service. The system converted videos into MPEG-DASH and HLS formats for streaming applications. I started as a junior C++ developer and evolved into a polyglot developer with experience in Java, PHP, and Python.",
+      "highlights": {
+        "0": "Distributed video encoding pipeline in the cloud",
+        "1": "Support for MPEG-DASH and HLS streaming formats",
+        "2": "Development in multiple languages: C++, Java, PHP, Python"
+      }
+    },
+    "optimization": {
+      "title": "Cloud Optimization (Hex)",
+      "description": "Cloud-based optimization solutions on GCP. Microservices architecture for scalability.",
+      "fullDescription": "At Hex GmbH, I developed cloud-based software solutions for optimization problems. Tasks ranged from designing and developing backend services to implementing optimization algorithms and heuristics. I was responsible for deployment, monitoring, and maintenance on Google Cloud Platform.",
+      "highlights": {
+        "0": "Microservices architecture on Google Cloud Platform",
+        "1": "Implementation of optimization algorithms and heuristics",
+        "2": "High-availability APIs with container orchestration"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's work together",
+    "description": "Have a project in mind or just want to say hello? I'd love to hear from you.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "cta": "Send Email"
+  },
+  "footer": {
+    "copyright": "All rights reserved.",
+    "built_with": "Built with Vue 3 & Tailwind CSS"
+  }
+}
