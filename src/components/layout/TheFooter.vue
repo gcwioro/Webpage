@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import { useScrollTo } from '@/composables/useScrollTo'
+import { RouterLink } from 'vue-router'
 
 const { t } = useI18n()
 const { scrollToTop } = useScrollTo()
@@ -55,6 +56,9 @@ const socialLinks = [
       <div class="mt-8 pt-8 border-t border-white/10 text-center">
         <p class="text-gray-400 text-sm">
           &copy; {{ currentYear }} Günther Cwioro. {{ t('footer.copyright') }}
+          <RouterLink to="/business-card" class="ml-4 hover:text-white transition-colors">
+            {{ t('footer.business_card') }}
+          </RouterLink>
         </p>
       </div>
     </div>

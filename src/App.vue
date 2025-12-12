@@ -17,7 +17,7 @@ useStructuredData()
 
 <template>
   <div class="min-h-screen">
-    <TheNavbar />
+    <TheNavbar class="no-print" />
 
     <RouterView v-slot="{ Component, route }">
       <Transition
@@ -31,7 +31,7 @@ useStructuredData()
       </Transition>
     </RouterView>
 
-    <TheFooter />
+    <TheFooter class="no-print" />
   </div>
 </template>
 

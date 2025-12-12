@@ -210,6 +210,7 @@
   },
   "footer": {
     "copyright": "All rights reserved.",
-    "built_with": "Built with Vue 3 & Tailwind CSS"
+    "built_with": "Built with Vue 3 & Tailwind CSS",
+    "business_card": "Business Card"
   }
 }

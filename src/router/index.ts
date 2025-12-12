@@ -42,6 +42,11 @@ const router = createRouter({
       name: 'contact',
       component: () => import('@/pages/ContactPage.vue'),
     },
+    {
+      path: '/business-card',
+      name: 'business-card',
+      component: () => import('@/pages/BusinessCardPage.vue'),
+    },
   ],
 })
 
