@@ -7,6 +7,18 @@ export interface Experience {
   endDate: string | null
   descriptionKey: string
   technologies: string[]
+  fullDescriptionKey?: string
+  highlights?: string[]
+  awards?: { titleKey: string; descriptionKey: string; logo?: string }[]
+  links?: { label: string; url: string }[]
+  badge?: { type: 'isef' | 'award'; label: string }
+}
+
+export interface Education {
+  institution: string
+  degree: string
+  startDate: string
+  endDate: string
 }
 
 export interface Service {
@@ -21,14 +33,6 @@ export interface Technology {
   category: 'frontend' | 'backend' | 'cloud' | 'methods'
   icon?: string
   proficiency: 'expert' | 'advanced' | 'intermediate'
-}
-
-export interface Project {
-  id: string
-  titleKey: string
-  descriptionKey: string
-  technologies: string[]
-  url?: string
 }
 
 export type Locale = 'de' | 'en'

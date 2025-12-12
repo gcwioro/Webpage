@@ -4,12 +4,12 @@ import { RouterLink } from 'vue-router'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import TechBadge from '@/components/ui/TechBadge.vue'
 import { technologies } from '@/data/technologies'
-import { projects } from '@/data/projects'
+import { experiences } from '@/data/experience'
 
 const { t } = useI18n()
 
 const featuredTechs = technologies.filter((t) => t.proficiency === 'expert').slice(0, 6)
-const featuredProjects = projects.slice(0, 3)
+const featuredExperiences = experiences.slice(0, 3)
 </script>
 
 <template>
@@ -80,13 +80,13 @@ const featuredProjects = projects.slice(0, 3)
               </BaseButton>
             </RouterLink>
 
-            <RouterLink to="/projects">
+            <RouterLink to="/about#experience">
               <BaseButton
                 variant="outline"
                 size="lg"
               >
-                <i class="fa-solid fa-folder-open mr-2"></i>
-                {{ t('hero.cta_projects') }}
+                <i class="fa-solid fa-briefcase mr-2"></i>
+                {{ t('nav.experience') }}
               </BaseButton>
             </RouterLink>
           </div>
@@ -107,44 +107,44 @@ const featuredProjects = projects.slice(0, 3)
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         <div class="grid md:grid-cols-3 gap-8">
           <div
-            v-for="(project, index) in featuredProjects"
-            :key="project.id"
+            v-for="(exp, index) in featuredExperiences"
+            :key="exp.id"
             class="group bg-background rounded-2xl p-6 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-up"
             :style="{ animationDelay: `${0.1 * index}s` }"
           >
             <div
-              v-if="project.awards"
+              v-if="exp.badge"
               class="mb-4"
             >
               <span
                 class="inline-flex items-center gap-1 text-xs font-medium text-yellow-600 bg-yellow-100 px-2 py-1 rounded-full"
               >
                 <i class="fa-solid fa-trophy"></i>
-                Award Winner
+                {{ exp.badge.label }}
               </span>
             </div>
             <h3
               class="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors"
             >
-              {{ t(project.titleKey) }}
+              {{ t(exp.positionKey) }}
             </h3>
             <p class="text-text-secondary text-sm mb-4 line-clamp-2">
-              {{ t(project.descriptionKey) }}
+              {{ t(exp.descriptionKey) }}
             </p>
             <RouterLink
-              :to="`/projects/${project.id}`"
+              :to="`/about#experience`"
               class="text-accent font-medium text-sm hover:underline inline-flex items-center gap-1"
             >
-              {{ t('projects.viewDetails') }}
+              {{ t('experience.viewDetails') }}
               <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
             </RouterLink>
           </div>
         </div>
 
         <div class="text-center mt-12">
-          <RouterLink to="/projects">
+          <RouterLink to="/about#experience">
             <BaseButton variant="outline">
-              {{ t('nav.projects') }}
+              {{ t('nav.experience') }}
               <i class="fa-solid fa-arrow-right ml-2"></i>
             </BaseButton>
           </RouterLink>

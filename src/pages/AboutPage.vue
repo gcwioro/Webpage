@@ -3,6 +3,7 @@ import { useI18n } from 'vue-i18n'
 import SectionHeading from '@/components/ui/SectionHeading.vue'
 import TechBadge from '@/components/ui/TechBadge.vue'
 import TimelineItem from '@/components/ui/TimelineItem.vue'
+import EducationSection from '@/components/sections/EducationSection.vue'
 import { getTechnologiesByCategory } from '@/data/technologies'
 import { experiences } from '@/data/experience'
 
@@ -108,7 +109,10 @@ const categories = [
       </div>
     </section>
 
-    <section class="py-20 bg-background">
+    <section
+      id="experience"
+      class="py-20 bg-background"
+    >
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeading
           title-key="experience.title"
@@ -125,11 +129,18 @@ const categories = [
             :end-date="exp.endDate"
             :description-key="exp.descriptionKey"
             :technologies="exp.technologies"
+            :full-description-key="exp.fullDescriptionKey"
+            :highlights="exp.highlights"
+            :awards="exp.awards"
+            :links="exp.links"
+            :badge="exp.badge"
             class="animate-fade-in-up"
             :style="{ animationDelay: `${0.1 * index}s` }"
           />
         </div>
       </div>
     </section>
+
+    <EducationSection />
   </div>
 </template>

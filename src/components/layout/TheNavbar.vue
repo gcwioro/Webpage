@@ -35,12 +35,6 @@ const navItems = [
     to: '/services',
     icon: 'fa-solid fa-cogs',
   },
-  {
-    id: 'projects',
-    key: 'nav.projects',
-    to: '/projects',
-    icon: 'fa-solid fa-folder-open',
-  },
 ]
 
 function handleScroll() {
